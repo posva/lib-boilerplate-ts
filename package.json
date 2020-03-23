@@ -41,7 +41,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
     "pascalcase": "^1.0.0",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.1",
     "rimraf": "^3.0.0",
     "rollup": "^1.21.4",
     "rollup-plugin-commonjs": "^10.1.0",
