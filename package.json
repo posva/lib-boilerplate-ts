@@ -43,7 +43,7 @@
     "pascalcase": "^1.0.0",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.0",
-    "rollup": "^1.21.4",
+    "rollup": "^2.21.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.2",
