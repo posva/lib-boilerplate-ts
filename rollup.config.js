@@ -25,7 +25,7 @@ const exportName = pascalcase(pkg.name)
 function createEntry(
   {
     format, // Rollup format (iife, umd, cjs, es)
-    external, // Rollup external option
+    external = null, // Rollup external option
     input = 'src/index.ts', // entry point
     env = 'development', // NODE_ENV variable
     minify = false,
@@ -45,10 +45,10 @@ function createEntry(
     plugins: [
       replace({
         __VERSION__: pkg.version,
+        preventAssignment: true,
         'process.env.NODE_ENV': `'${env}'`,
       }),
       alias({
-        resolve: ['.ts', '.js'],
         // entries: [{ find: 'firebase', replacement: path.join(__dirname, './stub') }],
       }),
     ],
